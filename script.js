@@ -21,7 +21,7 @@ const CONFIG = {
     musicUrl: "nhac.mp3",
 
     // 3. Ảnh hiển thị riêng trong lá thư (bạn có thể đổi sang bất kỳ ảnh nào bạn muốn):
-    letterPhoto: "image/anh1.jpg",
+    letterPhoto: "image/anh2.jpg",
 
     // 4. Danh sách ảnh kỷ niệm rơi trong màn mưa sinh nhật (các ảnh trong thư mục image/):
     photos: [
