@@ -15,7 +15,7 @@
 
 const CONFIG = {
     // 1. Tên người nhận (sẽ hiển thị trên vé, tiêu đề thư và bánh sinh nhật)
-    name: "Bé Iu",
+    name: "Vy Nguyễn",
 
     // 2. File nhạc nền chuyến tàu (chỉ cần đặt file nhac.mp3 vào cùng thư mục web):
     musicUrl: "nhac.mp3",
@@ -49,16 +49,16 @@ Anh không biết tất cả những nơi mình sẽ đi qua. Nhưng anh mong, t
 Anh yêu em, hôm nay và những ngày sau. ♡`,
 
     // 6. Chữ ký ở cuối bức thư:
-    signature: "Thương em, Anh ♡",
+    signature: "Yêu chị, Bảo Huy ♡",
 
     // 7. Các câu chúc ngọt ngào rơi cùng ảnh trong màn sinh nhật:
     rainWishes: [
-        "Anh yêu Bé Iu ♡",
+        " Yêu chị ♡",
         "Happy Birthday!",
-        "Cảm ơn em đã đến.",
+        "Cảm ơn chị đã đến.",
         "Luôn cười thật nhiều nhé.",
-        "Mong em luôn bình an.",
-        "Thương em mỗi ngày.",
+        "Mong chị luôn bình an.",
+        "Thương chị mỗi ngày.",
         "Mình luôn có nhau ♡",
         "Tuổi mới, thật nhiều niềm vui!"
     ]
@@ -169,9 +169,9 @@ const stops = [['Trạm Ngày Mưa', 'Hôm ấy trời mưa, nhưng có em nên 
 function renderRide() {
     clearTimeout(rideTimer);
     const lines = [
-        'Chuyến tàu mang theo một món quà nhỏ anh dành riêng cho em.',
+        'Chuyến tàu mang theo một món quà nhỏ em dành riêng cho chị.',
         'Trong đó có những kỷ niệm, những lời chưa nói và thật nhiều yêu thương.',
-        'Có một lá thư đang chờ. Em mở ra cùng anh nhé?'
+        'Có một lá thư đang chờ. Chị mở ra cùng em nhé?'
     ];
     rideStep = Math.min(rideStep, 2);
     $('rideText').textContent = lines[rideStep];
@@ -203,8 +203,8 @@ function startBirthdayRain() {
     const layer = $('birthdayRain');
     layer.replaceChildren();
     const words = (CONFIG.rainWishes && CONFIG.rainWishes.length) ? CONFIG.rainWishes : [
-        `Anh yêu ${cfg.name} ♡`, 'Happy Birthday!', 'Cảm ơn em đã đến.',
-        'Luôn cười thật nhiều nhé.', 'Mong em luôn bình an.', 'Thương em mỗi ngày.',
+        `Anh yêu ${cfg.name} ♡`, 'Happy Birthday!', 'Cảm ơn chị iu đã đến.',
+        'Luôn cười thật nhiều nhé.', 'Mong em luôn bình an.', 'Thương chị mỗi ngày.',
         'Mình luôn có nhau ♡', 'Tuổi mới, thật nhiều niềm vui!'
     ];
     const isMobile = window.innerWidth < 650;
