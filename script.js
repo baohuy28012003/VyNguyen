@@ -33,20 +33,20 @@ const CONFIG = {
         "image/anh6.jpg",
         "image/anh7.jpg",
         "image/anh8.jpg",
-        "image/anh9.jpg",
+        "image/anh11.jpg",
         "image/anh10.jpg"
     ],
 
     // 5. Nội dung bức thư gửi người ấy (có thể xuống dòng tự nhiên):
-    message: `Chúc mừng sinh nhật em, người anh thương!
+    message: `Chúc mừng sinh nhật chị, người em yêu!
 
 Anh vẫn nhớ những lần cùng em trú mưa, những buổi ngồi ở quán quen và nụ cười khiến một ngày bình thường cũng trở nên thật đẹp. Cảm ơn em đã cùng anh tạo nên những kỷ niệm ấy.
 
-Tuổi mới, mong em luôn bình an, cười thật nhiều và có đủ tự tin để làm những điều em yêu thích. Những ngày mệt mỏi, cứ nghỉ một chút nhé. Anh vẫn muốn ở bên và lắng nghe em.
+Tuổi mới, mong chị luôn bình an, cười thật nhiều và có đủ tự tin để làm những điều chị yêu thích. Những ngày mệt mỏi, cứ nghỉ một chút nhé. Anh vẫn muốn ở bên và lắng nghe em.
 
-Anh không biết tất cả những nơi mình sẽ đi qua. Nhưng anh mong, trong nhiều chuyến đi sắp tới, người ngồi cạnh anh vẫn là em.
+Em không biết tất cả những nơi mình sẽ đi qua. Nhưng em mong, trong nhiều chuyến đi sắp tới, người ngồi cạnh em vẫn là chị.
 
-Anh yêu em, hôm nay và những ngày sau. ♡`,
+Yêu chị, hôm nay và những ngày sau. ♡`,
 
     // 6. Chữ ký ở cuối bức thư:
     signature: "Yêu chị, Bảo Huy ♡",
