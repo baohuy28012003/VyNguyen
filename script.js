@@ -49,7 +49,7 @@ Em không biết tất cả những nơi mình sẽ đi qua. Nhưng em mong, tro
 Yêu chị, hôm nay và những ngày sau. ♡`,
 
     // 6. Chữ ký ở cuối bức thư:
-    signature: "Yêu chị, Bảo Huy ♡",
+    signature: "Của chị, Bảo Huy ♡",
 
     // 7. Các câu chúc ngọt ngào rơi cùng ảnh trong màn sinh nhật:
     rainWishes: [
