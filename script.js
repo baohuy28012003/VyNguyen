@@ -15,7 +15,7 @@
 
 const CONFIG = {
     // 1. Tên người nhận (sẽ hiển thị trên vé, tiêu đề thư và bánh sinh nhật)
-    name: "Vy Nguyễn",
+    name: "Khánh Vy",
 
     // 2. File nhạc nền chuyến tàu (chỉ cần đặt file nhac.mp3 vào cùng thư mục web):
     musicUrl: "nhac.mp3",
