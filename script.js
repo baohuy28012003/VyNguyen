@@ -359,7 +359,7 @@ function fwLoop() {
     }
 }
 
-$('blowCandles').onclick = () => { if (candlesOut) return; candlesOut = true; $('blowCandles').disabled = true; $('blowCandles').hidden = true; $('cakeStage').classList.add('candles-out'); $('cakeIntro').textContent = 'Điều ước của em đã được gửi đến những vì sao.'; launchFireworks(); startBirthdayRain(); setTimeout(() => { document.querySelector('.birthday-content')?.classList.add('content-fadeout'); }, 3000); };
+$('blowCandles').onclick = () => { if (candlesOut) return; candlesOut = true; $('blowCandles').disabled = true; $('blowCandles').hidden = true; $('cakeStage').classList.add('candles-out'); $('cakeIntro').textContent = 'Điều ước của chị đã được gửi đến những vì sao.'; launchFireworks(); startBirthdayRain(); setTimeout(() => { document.querySelector('.birthday-content')?.classList.add('content-fadeout'); }, 3000); };
 
 function launchFireworks() {
     if (reduce || !fwCtx) return;
