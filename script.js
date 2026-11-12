@@ -29,27 +29,29 @@ const CONFIG = {
         "image/anh2.jpg",
         "image/anh3.jpg",
         "image/anh4.jpg",
-        "image/anh5.jpg",
+        "image/anh15.jpg",
         "image/anh6.jpg",
         "image/anh7.jpg",
         "image/anh8.jpg",
-        "image/anh11.jpg",
+        "image/anh14.jpg",
         "image/anh10.jpg"
     ],
 
     // 5. Nội dung bức thư gửi người ấy (có thể xuống dòng tự nhiên):
     message: `Chúc mừng sinh nhật chị, người em yêu!
 
-Em vẫn nhớ những lần cùng chị trú mưa, những buổi ngồi ở quán quen và nụ cười khiến một ngày bình thường cũng trở nên thật đẹp. Cảm ơn chị đã cùng em tạo nên những kỷ niệm ấy.
+Em vẫn nhớ những ban đầu đầu hai đứa dây dưa tình cảm, những lần chị nghĩ em không thật, đặc biệt là sự kiện Chadston, tất cả đều thật lòng em có tình cảm với chị. 
 
-Tuổi mới, mong chị luôn bình an, cười thật nhiều và có đủ tự tin để làm những điều chị yêu thích. Những ngày mệt mỏi, cứ nghỉ một chút, kể cả tâm trí của chị, nhé. Em luôn muốn ở bên, lắng nghe chị và là chỗ dựa của chị.
+Chặng đường tán tỉnh chông gai này thế mà gần được một năm rồi, chưa thành đôi chắc là chỉ đang đợi "sẵn sàng" của em thôi, chị nhỉ. Em hi vọng chặn đường này kết thúc sớm, để em có thể cùng chị bước tiếp những chặn đường tiếp theo. Cảm ơn chị vẫn cùng em tới giờ phút này.
+
+Tuổi mới, mong chị luôn bình an, cười thật nhiều và có đủ tự tin để hoàn thành những mơ ước, yêu thích của chị. Huy luôn muốn ở bên, lắng nghe và là chỗ dựa của chị. Những ngày mệt mỏi, hãy cứ nghỉ một chút, cho em được nghe nhiều tiếng "Huy ơi" hơn từ chị, nha chị iu ơi. ♡
 
 Em không biết tất cả những nơi mình sẽ đi qua. Nhưng em mong, trong nhiều chuyến đi sắp tới, người ngồi cạnh em vẫn là chị.
 
 Yêu chị, hôm nay và những ngày sau. ♡`,
 
     // 6. Chữ ký ở cuối bức thư:
-    signature: "Của chị, Bảo Huy ♡",
+    signature: "Chó iu của chị, Bảo Huy ♡",
 
     // 7. Các câu chúc ngọt ngào rơi cùng ảnh trong màn sinh nhật:
     rainWishes: [
