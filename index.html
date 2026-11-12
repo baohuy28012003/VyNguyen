@@ -1,1 +1,366 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#251e40">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Chuyến tàu đến hành tinh của Khánh Vy </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sky" id="sky"></div>
+    <div class="starfield" id="starfield"></div>
+    <div class="moon"></div>
+    <div class="shooting"></div>
+    <div class="cloud"></div>
+    <div class="cloud c2"></div>
+    <canvas id="fireworkCanvas" class="firework-canvas"></canvas>
+
+    <main>
+        <section class="scene" id="station">
+            <div class="station-layout">
+                <div class="station-copy">
+                    <p class="eyebrow">Chuyến tàu số 1811 · duy nhất dành riêng cho Khánh Vy</p>
+                    <h1>Cùng Bảo Huy đến<br>hành tinh của<br><em class="recipient">Khánh Vy</em> <em>♡</em></h1>
+                    <div class="journey-tag"><span>KHỞI HÀNH <b>18.11</b></span><span>—</span><span>ĐIỂM ĐẾN <b>HẠNH
+                                PHÚC</b></span></div>
+                </div>
+                <div class="boarding">
+                    <svg class="train-art" id="train" viewBox="0 0 620 285" role="img"
+                        aria-label="Đoàn tàu hồng chạy trên đường ray giữa những vì sao">
+                        <defs>
+                            <linearGradient id="bodyPink" x2="0" y2="1">
+                                <stop stop-color="#e1aac5" />
+                                <stop offset="1" stop-color="#a26c91" />
+                            </linearGradient>
+                            <linearGradient id="glass" x2="0" y2="1">
+                                <stop stop-color="#ffe6b9" />
+                                <stop offset="1" stop-color="#dcaf9d" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M15 245Q300 228 610 245" fill="none" stroke="#bf9daf" stroke-width="3" />
+                        <path d="M30 255Q300 238 600 255" fill="none" stroke="#87738c" stroke-width="2" />
+                        <g fill="#e6c7d1">
+                            <circle class="smoke" cx="442" cy="70" r="16" />
+                            <circle class="smoke s2" cx="411" cy="47" r="23" />
+                            <circle class="smoke s3" cx="372" cy="30" r="28" />
+                        </g>
+                        <g stroke="#f0c5d8" stroke-width="2">
+                            <rect x="57" y="122" width="145" height="96" rx="10" fill="url(#bodyPink)" />
+                            <rect x="47" y="114" width="164" height="16" rx="8" fill="#b384a5" />
+                            <rect x="226" y="122" width="127" height="96" rx="10" fill="url(#bodyPink)" />
+                            <rect x="216" y="114" width="147" height="16" rx="8" fill="#b384a5" />
+                            <rect x="76" y="139" width="36" height="42" rx="15" fill="url(#glass)" />
+                            <rect x="126" y="139" width="36" height="42" rx="15" fill="url(#glass)" />
+                            <rect x="247" y="139" width="33" height="42" rx="14" fill="url(#glass)" />
+                            <rect x="294" y="139" width="33" height="42" rx="14" fill="url(#glass)" />
+                            <path d="M202 200h24m127 0h20" />
+                            <rect x="378" y="114" width="72" height="99" rx="7" fill="#b47c9d" />
+                            <rect x="369" y="105" width="89" height="14" rx="7" fill="#e3b1ca" />
+                            <rect x="392" y="128" width="39" height="43" rx="8" fill="url(#glass)" />
+                            <rect x="446" y="160" width="93" height="54" rx="10" fill="url(#bodyPink)" />
+                            <path d="M492 160v-49h24v49" fill="#bb89a8" />
+                            <rect x="484" y="105" width="40" height="12" rx="5" fill="#e7bdd0" />
+                            <path d="M537 187l30 31h-30z" fill="#c995af" />
+                            <circle cx="542" cy="174" r="9" fill="#ffe7ad" />
+                        </g>
+                        <g fill="#563d5b" stroke="#d4a1bb" stroke-width="6">
+                            <circle class="wheel" cx="86" cy="220" r="20" />
+                            <circle class="wheel" cx="170" cy="220" r="20" />
+                            <circle class="wheel" cx="254" cy="220" r="20" />
+                            <circle class="wheel" cx="325" cy="220" r="20" />
+                            <circle cx="406" cy="216" r="26" />
+                            <circle cx="484" cy="222" r="18" />
+                        </g>
+                        <g fill="#e9c2cb">
+                            <circle cx="86" cy="220" r="5" />
+                            <circle cx="170" cy="220" r="5" />
+                            <circle cx="254" cy="220" r="5" />
+                            <circle cx="325" cy="220" r="5" />
+                            <circle cx="406" cy="216" r="6" />
+                            <circle cx="484" cy="222" r="5" />
+                        </g>
+                        <path d="M406 216l78 6" stroke="#eac6d0" stroke-width="6" stroke-linecap="round" /><text x="481"
+                            y="198" fill="#fff1de" font-size="19">♡</text>
+                        <g fill="#ffe8c1">
+                            <path d="M140 70l3 9 9 3-9 3-3 9-3-9-9-3 9-3z" />
+                            <path d="M568 105l2 6 6 2-6 2-2 6-2-6-6-2 6-2z" />
+                        </g>
+                    </svg>
+                    <div class="ticket" id="ticket">
+                        <div class="ticket-main">
+                            <div class="ticket-label">THE LOVE EXPRESS · BOARDING PASS</div>
+                            <div class="ticket-name recipient">Chị iu</div>
+                            <div class="ticket-row">
+                                <div>KHỞI HÀNH<strong>18 THÁNG 11</strong></div>
+                                <div>NGƯỜI ĐỒNG HÀNH<strong>Bảo Huy ♡</strong></div>
+                                <div>TOA / GHẾ<strong>01 / FOREVER</strong></div>
+                            </div>
+                        </div>
+                        <div class="ticket-stub"><span>♡</span>
+                            <div class="barcode"></div>
+                            <div class="ticket-label">NO. 1811</div>
+                        </div>
+                        <div class="stamp">ĐÃ SOÁT VÉ<br>♡<br>WITH LOVE</div>
+                    </div>
+                    <div class="boarding-controls"><button class="primary" id="board">Soát vé & lên tàu →</button></div>
+                </div>
+            </div>
+        </section>
+        <section class="scene" id="ride" hidden>
+            <div class="ride-wrap moving-wrap">
+                <div class="travel-view">
+                    <div class="travel-moon"></div>
+                    <div class="travel-stars">✧　　　　　　　·　　　　　　　　　✦<br>　　　　　✦　　　　　　　　　·</div>
+                    <div class="travel-far"></div>
+                    <div class="travel-near"></div>
+                    <div class="travel-track"></div>
+                    <div class="travel-arrival"><svg class="travel-train" viewBox="0 0 620 285" role="img"
+                            aria-label="Đoàn tàu hồng chạy trên đường ray giữa những vì sao">
+                            <defs>
+                                <linearGradient id="travelPink" x2="0" y2="1">
+                                    <stop stop-color="#e1aac5" />
+                                    <stop offset="1" stop-color="#a26c91" />
+                                </linearGradient>
+                                <linearGradient id="travelGlass" x2="0" y2="1">
+                                    <stop stop-color="#ffe6b9" />
+                                    <stop offset="1" stop-color="#dcaf9d" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M15 245Q300 228 610 245" fill="none" stroke="#bf9daf" stroke-width="3" />
+                            <path d="M30 255Q300 238 600 255" fill="none" stroke="#87738c" stroke-width="2" />
+                            <g fill="#e6c7d1">
+                                <circle class="smoke" cx="442" cy="70" r="16" />
+                                <circle class="smoke s2" cx="411" cy="47" r="23" />
+                                <circle class="smoke s3" cx="372" cy="30" r="28" />
+                            </g>
+                            <g stroke="#f0c5d8" stroke-width="2">
+                                <rect x="57" y="122" width="145" height="96" rx="10" fill="url(#travelPink)" />
+                                <rect x="47" y="114" width="164" height="16" rx="8" fill="#b384a5" />
+                                <rect x="226" y="122" width="127" height="96" rx="10" fill="url(#travelPink)" />
+                                <rect x="216" y="114" width="147" height="16" rx="8" fill="#b384a5" />
+                                <rect x="76" y="139" width="36" height="42" rx="15" fill="url(#travelGlass)" />
+                                <rect x="126" y="139" width="36" height="42" rx="15" fill="url(#travelGlass)" />
+                                <rect x="247" y="139" width="33" height="42" rx="14" fill="url(#travelGlass)" />
+                                <rect x="294" y="139" width="33" height="42" rx="14" fill="url(#travelGlass)" />
+                                <path d="M202 200h24m127 0h20" />
+                                <rect x="378" y="114" width="72" height="99" rx="7" fill="#b47c9d" />
+                                <rect x="369" y="105" width="89" height="14" rx="7" fill="#e3b1ca" />
+                                <rect x="392" y="128" width="39" height="43" rx="8" fill="url(#travelGlass)" />
+                                <rect x="446" y="160" width="93" height="54" rx="10" fill="url(#travelPink)" />
+                                <path d="M492 160v-49h24v49" fill="#bb89a8" />
+                                <rect x="484" y="105" width="40" height="12" rx="5" fill="#e7bdd0" />
+                                <path d="M537 187l30 31h-30z" fill="#c995af" />
+                                <circle cx="542" cy="174" r="9" fill="#ffe7ad" />
+                            </g>
+                            <g fill="#563d5b" stroke="#d4a1bb" stroke-width="6">
+                                <circle class="wheel" cx="86" cy="220" r="20" />
+                                <circle class="wheel" cx="170" cy="220" r="20" />
+                                <circle class="wheel" cx="254" cy="220" r="20" />
+                                <circle class="wheel" cx="325" cy="220" r="20" />
+                                <circle cx="406" cy="216" r="26" />
+                                <circle cx="484" cy="222" r="18" />
+                            </g>
+                            <g fill="#e9c2cb">
+                                <circle cx="86" cy="220" r="5" />
+                                <circle cx="170" cy="220" r="5" />
+                                <circle cx="254" cy="220" r="5" />
+                                <circle cx="325" cy="220" r="5" />
+                                <circle cx="406" cy="216" r="6" />
+                                <circle cx="484" cy="222" r="5" />
+                            </g>
+                            <path d="M406 216l78 6" stroke="#eac6d0" stroke-width="6" stroke-linecap="round" /><text
+                                x="481" y="198" fill="#fff1de" font-size="19">♡</text>
+                            <g fill="#ffe8c1">
+                                <path d="M140 70l3 9 9 3-9 3-3 9-3-9-9-3 9-3z" />
+                                <path d="M568 105l2 6 6 2-6 2-2 6-2-6-6-2 6-2z" />
+                            </g>
+                            <g stroke="#f5d8dc" stroke-width="2" opacity=".8">
+                                <g class="travel-wheel" style="transform-origin:86px 220px">
+                                    <path d="M73 220h26M86 207v26" />
+                                </g>
+                                <g class="travel-wheel" style="transform-origin:170px 220px">
+                                    <path d="M157 220h26M170 207v26" />
+                                </g>
+                                <g class="travel-wheel" style="transform-origin:254px 220px">
+                                    <path d="M241 220h26M254 207v26" />
+                                </g>
+                                <g class="travel-wheel" style="transform-origin:325px 220px">
+                                    <path d="M312 220h26M325 207v26" />
+                                </g>
+                                <g class="travel-wheel" style="transform-origin:406px 216px">
+                                    <path d="M387 216h38M406 197v38" />
+                                </g>
+                                <g class="travel-wheel" style="transform-origin:484px 222px">
+                                    <path d="M472 222h24M484 210v24" />
+                                </g>
+                            </g>
+                        </svg></div>
+                    <div class="travel-grass"></div>
+                </div>
+                <div class="ride-footer">
+                    <p id="rideText" aria-live="polite">Chuyến tàu mang theo một món quà nhỏ em dành riêng cho chị.</p>
+                    <div id="letterReveal" hidden><button class="primary" id="openTravelLetter">Mở thư từ Chó iu của chị
+                            💌</button></div>
+                </div>
+                <div hidden><button id="memory"><img id="memoryPhoto" alt="Ảnh kỷ niệm"><span
+                            id="memoryCaption"></span></button><span id="marker0"></span><span id="marker1"></span><span
+                        id="marker2"></span></div>
+            </div>
+        </section>
+        <section class="scene birthday-scene" id="planet" hidden>
+            <div id="birthdayRain" class="birthday-rain" aria-hidden="true"></div>
+            <div class="birthday-content">
+                <h2>Happy Birthday,<br><em class="recipient">Chị iu</em> ♡</h2>
+                <p class="birthday-sub" id="cakeIntro">Nhắm mắt, ước một điều thật đẹp.<br>Rồi chạm vào nến để gửi điều
+                    ước lên trời nhé.</p>
+                <div class="cake-stage" id="cakeStage">
+                    <div class="cake-aura"></div>
+                    <svg class="birthday-cake" viewBox="0 0 560 450" role="img"
+                        aria-label="Bánh sinh nhật hai tầng màu hồng với ba cây nến">
+                        <defs>
+                            <linearGradient id="tierLower">
+                                <stop stop-color="#d18da9" />
+                                <stop offset=".35" stop-color="#f3bfd0" />
+                                <stop offset=".7" stop-color="#e6a9c2" />
+                                <stop offset="1" stop-color="#b97599" />
+                            </linearGradient>
+                            <linearGradient id="tierUpper">
+                                <stop stop-color="#eab2c8" />
+                                <stop offset=".4" stop-color="#ffdfdf" />
+                                <stop offset="1" stop-color="#cf93b0" />
+                            </linearGradient>
+                            <linearGradient id="goldCake" x2="0" y2="1">
+                                <stop stop-color="#fff0cf" />
+                                <stop offset="1" stop-color="#c19687" />
+                            </linearGradient>
+                        </defs>
+                        <ellipse cx="280" cy="406" rx="205" ry="24" fill="#1b142d" opacity=".24" />
+                        <path d="M241 360h78l-13 41h-52z" fill="#d3a6ba" />
+                        <ellipse cx="280" cy="404" rx="80" ry="12" fill="#eac8cf" />
+                        <ellipse cx="280" cy="355" rx="195" ry="36" fill="url(#goldCake)" />
+                        <ellipse cx="280" cy="348" rx="191" ry="30" fill="#ffe4dc" />
+                        <path d="M110 249H450V326C450 369 110 369 110 326Z" fill="url(#tierLower)" />
+                        <ellipse cx="280" cy="249" rx="170" ry="35" fill="#ffe0df" />
+                        <path
+                            d="M110 249c0 25 340 25 340 0v27q-12 15-23 0v16q-14 21-27 0v-10q-13 20-28 0v26q-14 17-27-2v-15q-15 18-29 0v11q-17 20-32 0v-8q-15 23-30 0v14q-15 18-27-2v-18q-15 20-29 0v8q-14 19-28 0v-21q-12 18-24 0v12q-16 17-25-5z"
+                            fill="#fff0e7" />
+                        <path d="M170 161H390V238C390 269 170 269 170 238Z" fill="url(#tierUpper)" />
+                        <ellipse cx="280" cy="161" rx="110" ry="26" fill="#fff0e4" />
+                        <path
+                            d="M170 161c0 19 220 19 220 0v23q-12 19-22 0v17q-13 17-25-2v-10q-12 14-25 0v23q-13 16-24-2v-11q-15 13-28-2v12q-14 15-26-2v-14q-12 15-24-2v8q-13 15-24-3v-16q-13 9-22-5z"
+                            fill="#fff7ec" />
+                        <g fill="#fff1e7" stroke="#e9bdcf" stroke-width="1">
+                            <ellipse cx="130" cy="343.6" rx="10" ry="7" />
+                            <ellipse cx="150" cy="345.7" rx="10" ry="7" />
+                            <ellipse cx="170" cy="347.5" rx="10" ry="7" />
+                            <ellipse cx="190" cy="349.0" rx="10" ry="7" />
+                            <ellipse cx="210" cy="350.2" rx="10" ry="7" />
+                            <ellipse cx="230" cy="351.1" rx="10" ry="7" />
+                            <ellipse cx="250" cy="351.7" rx="10" ry="7" />
+                            <ellipse cx="270" cy="352.0" rx="10" ry="7" />
+                            <ellipse cx="290" cy="352.0" rx="10" ry="7" />
+                            <ellipse cx="310" cy="351.7" rx="10" ry="7" />
+                            <ellipse cx="330" cy="351.1" rx="10" ry="7" />
+                            <ellipse cx="350" cy="350.2" rx="10" ry="7" />
+                            <ellipse cx="370" cy="349.0" rx="10" ry="7" />
+                            <ellipse cx="390" cy="347.5" rx="10" ry="7" />
+                            <ellipse cx="410" cy="345.7" rx="10" ry="7" />
+                            <ellipse cx="430" cy="343.6" rx="10" ry="7" />
+                            <ellipse cx="186" cy="245.2" rx="8" ry="6" />
+                            <ellipse cx="203" cy="248.4" rx="8" ry="6" />
+                            <ellipse cx="220" cy="251.0" rx="8" ry="6" />
+                            <ellipse cx="237" cy="253.0" rx="8" ry="6" />
+                            <ellipse cx="254" cy="254.3" rx="8" ry="6" />
+                            <ellipse cx="271" cy="254.9" rx="8" ry="6" />
+                            <ellipse cx="288" cy="254.9" rx="8" ry="6" />
+                            <ellipse cx="305" cy="254.3" rx="8" ry="6" />
+                            <ellipse cx="322" cy="253.0" rx="8" ry="6" />
+                            <ellipse cx="339" cy="251.1" rx="8" ry="6" />
+                            <ellipse cx="356" cy="248.6" rx="8" ry="6" />
+                            <ellipse cx="373" cy="245.4" rx="8" ry="6" />
+                        </g>
+                        <g fill="#bb678b">
+                            <path d="M266 216c-23-17-6-30 3-18 11-12 25 3-3 18" />
+                            <path d="M330 318c-18-13-5-24 2-14 9-10 21 3-2 14" />
+                            <path d="M221 318c-18-13-5-24 2-14 9-10 21 3-2 14" />
+                        </g>
+                        <g fill="#fff1bf">
+                            <circle cx="191" cy="312" r="3" />
+                            <circle cx="369" cy="310" r="3" />
+                            <circle cx="302" cy="329" r="3" />
+                            <circle cx="263" cy="329" r="3" />
+                            <circle cx="311" cy="227" r="2.5" />
+                        </g>
+                        <g fill="#bd7599" stroke="#f8d6df" stroke-width="1">
+                            <rect x="217" y="111" width="13" height="51" rx="3" />
+                            <rect x="273" y="92" width="14" height="68" rx="3" />
+                            <rect x="330" y="111" width="13" height="51" rx="3" />
+                        </g>
+                        <g stroke="#ffe3cb" stroke-width="3">
+                            <path
+                                d="M218 124l11-6m-11 20 11-6m-11 21 11-6M274 107l12-7m-12 24 12-7m-12 24 12-7m-12 22 12-7M331 124l11-6m-11 20 11-6m-11 21 11-6" />
+                        </g>
+                        <g stroke="#6d465a" stroke-width="2">
+                            <path d="M224 111v-9m56-10v-9m57 28v-9" />
+                        </g>
+                        <g class="cake-flames">
+                            <g class="cake-flame">
+                                <ellipse cx="224" cy="87" rx="23" ry="29" fill="#ffd990" opacity=".13" />
+                                <path d="M224 105c-22-12-5-29 0-38 17 21 14 33 0 38" fill="#ffc675" />
+                                <path d="M224 102c-9-7-3-18 0-21 8 13 6 18 0 21" fill="#fff7d5" />
+                            </g>
+                            <g class="cake-flame">
+                                <ellipse cx="280" cy="66" rx="29" ry="34" fill="#ffd990" opacity=".17" />
+                                <path d="M280 87c-24-13-6-32 0-44 20 25 15 38 0 44" fill="#ffc675" />
+                                <path d="M280 83c-11-8-3-20 0-24 9 13 8 20 0 24" fill="#fff7d5" />
+                            </g>
+                            <g class="cake-flame">
+                                <ellipse cx="337" cy="87" rx="23" ry="29" fill="#ffd990" opacity=".13" />
+                                <path d="M337 105c-22-12-5-29 0-38 17 21 14 33 0 38" fill="#ffc675" />
+                                <path d="M337 102c-9-7-3-18 0-21 8 13 6 18 0 21" fill="#fff7d5" />
+                            </g>
+                        </g>
+                        <g class="candle-smoke" fill="none" stroke="#f3dce2" stroke-width="2" opacity="0">
+                            <path d="M224 103q-15-18 0-30t0-25M280 86q-15-18 0-30t0-25M337 103q-15-18 0-30t0-25" />
+                        </g>
+                    </svg>
+                    <button class="candle-hit" id="blowCandles"
+                        aria-label="Chạm vào nến để thổi tắt và mở mưa ảnh"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <dialog id="travelLetter" class="travel-letter"><button class="close" id="closeTravelLetter"
+            aria-label="Đóng thư">×</button>
+        <div class="travel-letter-body">
+            <figure class="letter-photo"><img id="travelPhoto" alt="Ảnh kỷ niệm của hai người">
+            </figure>
+            <p class="eyebrow" style="color:#a16b86">Một lá thư trên chuyến tàu tràn đầy yêu thương của Bảo Huy</p>
+            <h2>Gửi <span class="recipient">Chị </span> </h2>
+            <p id="travelMessage"></p>
+            <div class="travel-letter-footer">
+                <img src="image/mewmew.gif" class="letter-gif" alt="mewmew gif">
+                <p id="travelSignature">Của chị, Bảo Huy ♡</p>
+            </div>
+        </div>
+        <div class="travel-letter-actions"><button class="primary" id="continueJourney">Đến bánh sinh nhật của chị
+                🎂</button></div>
+    </dialog>
+
+    <dialog class="viewer" id="viewer"><button class="close" id="closeViewer" aria-label="Đóng ảnh">×</button><img
+            id="viewerImage" alt="Ảnh kỷ niệm phóng lớn">
+    </dialog>
+    <script src="script.js"></script>
+</body>
+
+</html>
 
