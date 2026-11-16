@@ -18,7 +18,7 @@ const CONFIG = {
     name: "Khánh Vy",
 
     // 2. File nhạc nền chuyến tàu (chỉ cần đặt file nhac.mp3 vào cùng thư mục web):
-    musicUrl: "nhac.mp4",
+    musicUrl: "nhac.mp3",
 
     // 3. Ảnh hiển thị riêng trong lá thư (bạn có thể đổi sang bất kỳ ảnh nào bạn muốn):
     letterPhoto: "image/anh2.jpg",
