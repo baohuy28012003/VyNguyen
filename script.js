@@ -18,14 +18,14 @@ const CONFIG = {
     name: "Khánh Vy",
 
     // 2. File nhạc nền chuyến tàu (chỉ cần đặt file nhac.mp3 vào cùng thư mục web):
-    musicUrl: "nhac.mp3",
+    musicUrl: "nhac.mp4",
 
     // 3. Ảnh hiển thị riêng trong lá thư (bạn có thể đổi sang bất kỳ ảnh nào bạn muốn):
     letterPhoto: "image/anh2.jpg",
 
     // 4. Danh sách ảnh kỷ niệm rơi trong màn mưa sinh nhật (các ảnh trong thư mục image/):
     photos: [
-        "image/anh1.jpg",
+        "image/anh14.jpg",
         "image/anh2.jpg",
         "image/anh3.jpg",
         "image/anh4.jpg",
@@ -33,16 +33,16 @@ const CONFIG = {
         "image/anh6.jpg",
         "image/anh7.jpg",
         "image/anh8.jpg",
-        "image/anh14.jpg",
+        "image/anh1.jpg",
         "image/anh10.jpg"
     ],
 
     // 5. Nội dung bức thư gửi người ấy (có thể xuống dòng tự nhiên):
     message: `Chúc mừng sinh nhật chị, người em yêu!
 
-Em vẫn nhớ những ban đầu đầu hai đứa dây dưa tình cảm, những lần chị nghĩ em không thật, đặc biệt là sự kiện Chadston, tất cả đều thật lòng em có tình cảm với chị. 
+Em vẫn nhớ những ban đầu gặp gỡ, những ban đầu chị nghĩ không thật từ em, đặc biệt là sự kiện Chadston. Đó đều là những "thích" thật lòng của Huy cho tới "yêu" của hiện tại.
 
-Chặng đường tán tỉnh chông gai này thế mà gần được một năm rồi, chưa thành đôi chắc là chỉ đang đợi "sẵn sàng" của em thôi, chị nhỉ. Em hi vọng chặn đường này kết thúc sớm, để em có thể cùng chị bước tiếp những chặn đường tiếp theo. Cảm ơn chị vẫn cùng em tới giờ phút này.
+Chặng đường tán tỉnh chông gai này ấy thế mà gần được một năm rồi, còn mỗi "sẵn sàng" của em thôi thì hoàn thành chị nhỉ. Em hi vọng chặng đường này có thể kết thúc sớm hơn, để em có thể cùng chị bước tiếp những chặng đường tiếp theo. 
 
 Tuổi mới, mong chị luôn bình an, cười thật nhiều và có đủ tự tin để hoàn thành những mơ ước, yêu thích của chị. Huy luôn muốn ở bên, lắng nghe và là chỗ dựa của chị. Những ngày mệt mỏi, hãy cứ nghỉ một chút, cho em được nghe nhiều tiếng "Huy ơi" hơn từ chị, nha chị iu ơi. ♡
 
